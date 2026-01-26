@@ -123,4 +123,4 @@ fi
 # CLAWDBOT_DEV_MODE only controls allowInsecureAuth, not binding
 BIND_MODE="lan"
 echo "Dev mode: ${CLAWDBOT_DEV_MODE:-false}, Bind mode: $BIND_MODE"
-exec clawdbot gateway --port 18789 --verbose --allow-unconfigured --bind "$BIND_MODE" --token "$GATEWAY_TOKEN"
+exec clawdbot gateway --port 18789 --verbose --allow-unconfigured --bind "$BIND_MODE" --auth token --token "$GATEWAY_TOKEN"
